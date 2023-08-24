@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gift Recommendation</title>
+    <style>
+        /* CSS styles for a multicolored background */
+body {
+     background: linear-gradient(45deg, #3f4038, #000000, #2e3435, #2d353b); 
+        background-size: 400% 400%; 
+    animation: gradientAnimation 10s ease infinite;
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+        *{
+            margin: 0;
+            margin-top: 5px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items:center ;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            
+
+        }
+        #criteria-form{
+            color: aqua;
+            margin-left: 80px;
+            border: 4px double blueviolet;
+            width: 16cm;
+            padding: 10px;
+            font-size: xx-large;
+            border-radius: 16px
+        }
+        #criteria-form input[type="text"],
+        #criteria-form input[type="number"] {
+            width: 50%; 
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: large;
+}
+button:hover {
+            background-color: blueviolet;
+            color: #fff;
+            cursor: pointer;
+            
+}
+#criteria-form button[type="submit"]{
+    padding: 15px 25px;
+    font-size: large;
+    font-weight: bold;
+}
+        nav li{
+             margin-right: 30px;
+            /* display: grid; */
+            /* grid-auto-flow: column;
+            grid-auto-columns: 1rem; */
+            color: aquamarine; 
+           border-radius: 50px;
+           background-color: blueviolet;
+           padding: 8px 8px;
+           text-align: center;
+           cursor: pointer;
+        }
+       
+        h2{
+            text-align: center;
+            font-size: 70px;
+            font-style: oblique;
+            font-family: sans-serif;
+            color: aquamarine;
+            cursor: default;
+            
+        }
+        .list2{
+            list-style-type: none;
+            display: flex;
+            text-align: center;
+        }
+        .li2{
+            padding-block: 6px;
+            padding-inline: 8px;
+            margin-right: 30px;
+            display: flex;
+            cursor: pointer;
+            background-color: aqua;
+            font-size: larger;
+            border-width: 20px;
+            border-radius: 50px;
+        }
+        #li2{
+            margin-left: 9cm;
+        }
+        
+.google-logo {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some right margin to separate the image from the text */
+    vertical-align: middle;
+}
+.e-logo{
+    width: 30px;
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some right margin to separate the image from the text */
+    vertical-align: middle;
+
+}
+        #logo{
+            margin-left: 10px;
+            color: aqua;
+            font-family: monospace;
+            font-size: xx-large;
+            font-weight: bolder;
+            cursor: default;
+        }
+        .ai{color: #0088ff;
+
+        }
+        .bi{
+            color: #0088ff;
+        }
+        #recommand{
+            color: rgb(71, 17, 122);
+        }
+        #recommendations{
+            color: white;
+            margin-left: 10px;
+        }
+        footer{
+            margin-left: 10px;
+            color: white;
+        }
+        .container{
+            color: white;
+            width: 24cm;
+            /* text-align: center; */
+             margin: 20px auto;
+             
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             font-family: "Arial", sans-serif;
+             font-size: 16px;
+             line-height: 1.6;
+             letter-spacing: 0.1em;
+             
+        }
+        .logo1{
+            font-size: 16px;
+            color: aqua;
+            font-family: monospace;
+            font-weight: bolder;
+        }
+        
+    </style>
+    <link rel="shortcut icon" href="/giftlogo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        
+        <big id="logo"><b>gift<span class="ai">.</span>ai</b></big> 
+        <nav>
+            <ul class="list1">
+                <li>Help</li>
+                <li>Sign In</li>
+                <li>Try For Free</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="criteria">
+            <h2 id="recommand">Where ai magic <br>meets your <span class="bi">Gifting</span> needs
+            </h2>
+            <ul class="list2"> 
+                
+                <li id="li2" class="li2"><img class="google-logo" src="/glogo.png" alt="Google"><b>Sign up with Google</b>
+                </li>
+                
+                <li class="li2"><img class="e-logo" src="/elogo.png" alt="E-mail" srcset=""><b>Sign up with E-mail</b></li>
+            </ul><br>
+            <div class="container">
+                Welcome to <b class="logo1">gift<span class="ai">.</span>ai</b>, where the art of gifting meets cutting-edge AI technology. Finding the perfect gift has never been easier. Our intelligent platform takes the guesswork out of gift-giving. Simply tell us your criteria i.e, recipient's age, interests, occasion, and budget; and watch as AI magic curates a tailored selection of thoughtful gifts just for you. Our extensive catalog boasts a diverse array of options, from unique and personalized treasures to classic favorites. Explore reviews, compare prices, and enjoy a stress-free shopping experience. Say goodbye to gift-giving dilemmas; with <b class="logo1">gift<span class="ai">.</span>ai</b>, every present is a perfect one.
+            </div><hr><br><br>
+            <form id="criteria-form">
+                <label for="occasion"><b>Occasion:</b></label>
+                <!-- <label for="occasion"><b>Occasion:</label> -->
+                <input type="text" id="occasion" name="occasion" required>
+                <br><br>
+
+                <label for="budget"><b>Budget: </b></label>
+                <input type="number" id="budget" name="budget" required>
+                <br><br>
+                <label for="age"><b>Recepient's Age: </b></label>
+                <input type="number" name="age" id="age">
+                <br><br>
+                <label for="relation"><b>Relation: </b></label>
+                <input type="text" name="relation" id="relation" placeholder="Relation with recepient">
+                <br><br>
+
+                <button type="submit">Recommend Gifts</button>
+            </form>
+        </section><br><br>
+
+        <section id="recommendations">
+            <h3>Gift Recommendations</h3>
+            <ul id="gift-list">
+                <!-- Recommendations will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gift Recommendation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
